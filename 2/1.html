@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>初识那年 颁你的奖杯 写着1314</title>
+
+		<!-- Behavioral Meta Data -->
+
+		<meta name="Christmas-Landing-Page" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="description" content="Christmas Landing Page Theme">
+		<meta name="keywords" content="Christmas, Landing, Countdown, Tree, Snow">
+		<meta name="author" content="AwesomeC">
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<link rel="stylesheet" type="text/css" href="static/css/media-query.css">
+
+		<!-- Fonts -->
+		<link href="static/css/css.css" rel="stylesheet">
+		<link rel="icon" href="static/image/mm.ico" type="image/x-icon">
+	</head>
+	<body style="overflow: hidden;">
+		<div id="loader"></div>
+		<!-- Parallax Container -->
+		<div id="container" class="parallax-container snow">
+			<ul id="christmas_scene" class="christmas-scene">
+				<li class="layer" data-depth="0.80">
+					<div class="layer-5 layer-photo photo-zoom"></div>
+				</li>
+				<li class="layer" data-depth="0.60">
+					<div class="layer-4 layer-photo photo-zoom"></div>
+				</li>
+				<li class="layer" data-depth="0.40">
+					<div class="layer-3 layer-photo photo-zoom"></div>
+				</li>
+				<li class="layer" data-depth="0.20">
+					<div class="layer-2 layer-photo photo-zoom"></div>
+				</li>
+				<li class="layer" data-depth="0.00">
+					<div class="layer-1 layer-photo"></div>
+				</li>
+			</ul>
+			<!-- Countdown Container -->
+			<div id="countdown_container"></div>
+
+			<!-- Merry Christmas Text -> You can replace with anything you like! -->
+			<div class="merry-christmas-text">Merry Christmas Miaomiao</div>
+
+			<!-- Happy new year photo -->
+			<div class="happy-new-year"></div>
+
+			<!-- Contact Pole Image -> From here the E-mail modal is triggered -->
+			<div id="mail_pole">
+				<img src="static/picture/pole.png" class="img-responsive" alt="mail-pole" data-toggle="modal"
+					data-target="#contact_modal">
+			</div>
+			<!-- Christmas Tree -->
+			<img src="static/picture/christmas-tree.png" alt="christmas-tree" id="christmas_tree">
+
+			<!-- Social Media Icons Container -->
+			<div class="icons-container">
+
+			</div>
+			<span class="write-for-you1">多幸运能和你在一起</span>
+			<span class="write-for-you">Willing to be each other's gifts</span>
+		</div>
+
+		<!-- Send E-mail Modal -->
+		<div class="modal fade" id="contact_modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="col-md-12 mail-container">
+							<div class="col-md-12 padding-none bg-color" style="display:flex; align-items: center; justify-content: space-around; overflow-x: auto; overflow-y: hidden;">
+								<video height="360" autoplay loop controls>
+								  <source src="static/image/1.mp4"  type="video/mp4">
+								  <source src="movie.ogg"  type="video/ogg">
+								  您的浏览器不支持 HTML5 video 标签。
+								</video>
+								<img src="static/image/21.jpg" >
+								<video height="360" autoplay loop controls>
+								  <source src="static/image/2.mp4"  type="video/mp4">
+								  您的浏览器不支持 HTML5 video 标签。
+								</video>
+								<span>...</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="static/js/jquery-3.1.1.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/jquery.countdown.js"></script>
+		<script src="static/js/jquery.parallax.js"></script>
+		<script src="static/js/snow.js"></script>
+		<script src="static/js/main.js"></script>
+		<script>
+			// Parallax Init
+			$('#christmas_scene').parallax({
+				scalarX: 5,
+				scalarY: 15,
+				invertY: false
+			});
+		</script>
+	</body>
+</html>
